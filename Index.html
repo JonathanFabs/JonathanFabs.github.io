@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+<link rel = "stylesheet" href = "Style.css">
+
+  
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!--Used to gather information from contacts form-->
+<!--Script for sending email-->
+
+<script src ="Indexing.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("5Fz0kxrwdlJx-tsiU");
+   })();
+</script>
+
+
+
+<title>Welcome to my website</title>
+</head>
+<body>
+    <header>
+        <h3 class = "Name__Title">Jonathan Fabunmi</h3>
+        <nav>
+            <ul class="nav__Links">
+                <li><a href = '#Projects'>Projects</a></li>
+                <li><a href = '#Skills'>Experience</a></li>
+                <li><a href = '#Contacts'>Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Content__Container">
+        <div class="Social__Icons">
+            <nav class="Icons__SideBar">
+                <li><a href = "https://www.linkedin.com/in/jonathan-fabunmi-ab5230256/"><img src ="images/linkedin.png" class = "linkedin"></a></li>
+                <li><a href = "https://github.com/JonathanFabs"><img src = "images/github.png" class = "github"></a></li>
+            </nav>
+        </div>
+        <div class="summary__Card__Container">
+                <div class="summary__Card__Content">
+                    <div class="Intro">
+                        <b><h1>Hi there!</h1></b><img src = "images/Handwave.png" class = "Wave">
+                    </div>
+                    <p class = "introduction__summary">My name is Jonathan Fabunmi, a motivated, problem-solving graduate seeking to explore the field of front-end development.</p>
+                    <a href="#Projects"><button class="Projects">PROJECTS</button></a>
+                    <a href="#Contacts"><button class="Projects">CONTACT ME</button></a>
+                </div>
+        </div>
+        <div class="Languages__section" id = "Skills">
+            <h2><b>Skills gained</b>:</h2>
+        
+            <div class="Skills__Container">
+        
+                    <div class="frontend__category">
+                        <h4 class = "skills_Title">Frontend-Developer skills:</h4>
+                        <ul>
+                            <li class =frontend__Skills>JavaScript<img src = "images/js.png" class = "frontend_Icons"></li>
+                            <li class =frontend__Skills>HTML5<img src = "images/html.png" class = "frontend_Icons"></li>
+                            <li class =frontend__Skills>CSS<img src = "images/css-3.png" class = "frontend_Icons"></li>
+                            <li class =frontend__Skills>React<img src = "images/atom.png" class = "frontend_Icons"></li>
+                        </ul>
+                    </div>
+                    <div class="backend__category">
+                        <h4 class = "skills_Title">Backend-Developer skills:</h4>
+                        <ul>
+                            <li class = "backend__Skills">SQL <img src = "images/sql-server.png" class = "backend_Icons"></li>
+                            <li class = "backend__Skills">MySQL <img src = "images/mysql.png" class = "backend_Icons"></li>
+                            <li class = "backend__Skills">API's <img src = "images/browser.png" class = "backend_Icons"></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="projects__section" id = "Projects" >
+            <h2 class = "Projects__Title"><b>Projects:</b></h2>
+            <div class="Projects__Contanier">
+                
+                <div class="Projects__Display">
+                    <h3>Frontend UI project</h3>
+                    <div class="img__Container">
+                        <img src="images/Frontend UI.jpg" class="Project__Picture">
+                    </div>
+                    <div class="Project__details">
+                       Worked on a frontend project that required me translating a figma file into code.
+                    </div>
+                    <a href="https://jonathanfabs.github.io/NFT-preview-card-Personal-Project-/"><button class="More__Info">Live Demo</button></a>
+                  
+                </div>
+                
+                <div class="Projects__Display">
+                    <h3>React To-do list</h3>
+                    <div class="img__Container">
+                    <img src ="images/Todo-list_Project.png" class = "Project__Picture">
+                    </div>
+                    <div class="Project__details">
+                        Project that allows for the users to update, delete and edit tasks needed to be completed.
+                    </div>
+                    <a href="#"><button class="More__Info">Live Demo</button></a>
+                </div>
+
+                <div class="Projects__Display">
+                    <h3>Product preview card</h3>
+                    <div class="img__Container">
+                    <img src="images/Product-Preview card.jpg" class = "Project__Picture">
+                    </div>
+                    <div class="Project__details">
+                       Created a product preview card with responsive boxes for both phones and computers.
+                    </div>
+                    <a href="https://jonathanfabs.github.io/Product-Preview-Card/"><button class="More__Info">Live Demo</button></a>
+                </div>
+            </div>
+            <a href="https://github.com/JonathanFabs""><button class="more__Projects">See more projects</button></a>
+        </div>
+        <div class="contacts__section" id = "Contacts">
+            <div class="Personal__ContactsContainer">
+
+            </div>
+
+          <div class="Contacts__FormContainer">
+              <form class = "contacts__Form"><div class="full__Name">
+                <h2><b>Contact me</b></h2>
+                    <input type = "text" id="name" placeholder ="Your full name" className = "full__Name"></input>
+              </div>
+                <div class="Email__Input">
+                    <input type = "email" id="email" placeholder="Your email" className = "form__Email"></input>
+                </div>
+               <div class="message__Input">
+                   <textarea class = "form__Textarea"  id ="message" placeholder="Enter your message"></textarea>
+               </div>
+               <button class = "Submit" onclick = "sendMail()">Send Message</button>
+              </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <footer class="footer__Container">  
+                <ul class = "linksInFooter">
+                    <li><a href = '#Projects'>Projects</a></li>
+                    <li><a href = '#Skills'>Experience</a></li>
+                    <li><a href = '#Contacts'>Contacts</a></li>
+                </ul>
+
+                <div class="footer__Socials">
+                    <a href="https://github.com/JonathanFabs"><img src ="images/github_footer.png" class = "github_F"></a>
+                    <a href="https://www.linkedin.com/in/jonathan-fabunmi-ab5230256/"><img src ="images/linkedin_footer.png" class = "LinkedIn_F"></a>
+                    
+                </div>
+
+                <div class="footer__copyright">
+                    <small>&copy;JF.All rights reserved </small>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<!--To do list next time coding-->
+
+<!--Contacts form needs work, not sending email when button clicked-->
+
+<!--Media quieres for differing screen sizes-->
+
+<!--make react project live then upload-->
+
