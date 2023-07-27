@@ -1,0 +1,450 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Very-dark-blueB: hsl(217, 54%, 11%);
+    --Background-colour-Div: #2e5090;
+    --Background-colour: #DDDBF1;
+    --Header-Colour: #383F51;
+    --Projects-Button-Color: #FFBF00;
+    --Hover-Color:#FFAC1C;
+
+}
+/*Need to media quiery sizes so that it fits on all the screens*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Outfit', sans-serif;
+}
+
+li, a , button{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+body{
+    /*Background sourced from */
+
+    --s: 84px; /* control the size*/
+    --c1: #f2f2f2;
+    --c2: #cdcbcc;
+    --c3: #999999;
+    
+    --_g: 0 120deg,#0000 0;
+    background:
+      conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
+      conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
+      conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
+      conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+      conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+      conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+    background-size: calc(var(--s)*1.732) var(--s);
+    /* sqrt(3) = 1.732 */
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+}
+h2{
+    font-size: 30px;
+    font-weight: 400px;
+    padding: 20px;
+}
+
+/*Nav bar CSS*/
+html{
+    scroll-behavior: smooth;
+}
+
+.Name__Title{
+    color: white;
+}
+
+.nav__Links{
+    list-style: none;
+}
+
+.nav__Links li{
+    display:inline-block;
+    padding: 0px 10px; 
+}
+
+.nav__Links li a {
+    transition: all 0.3s ease 0s; 
+}
+
+.nav__Links li a:hover {
+    transition: all 0.3s ease 0s; 
+    color:var(--Hover-Color);
+}
+
+/*Introduction section*/
+.Content__Container{
+margin: 50px;
+width: 1800px;
+text-align: center;
+background-color:white;
+border-radius:15px;
+height: 3500px;
+}
+
+.summary__Card__Container{
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+
+.summary__Card__Content{
+border-radius: 50px;
+padding: 70px;
+width: 1000px;
+height: 600px;
+margin: 10px;
+font-size: 50px;
+text-align: center;
+font-weight: 300;
+color: black;
+
+}
+
+.Intro{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    font-size: 30px;
+    font-weight: 400px;
+}
+
+.Wave{
+   width: 80px;
+   padding-left: 20px;
+}
+
+/*Projects section*/
+
+.Projects{
+    color: black;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: var(--Projects-Button-Color);
+    border: none;
+    font-size: 20px;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--Hover-Color);
+
+    transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+}
+
+.Projects:hover{
+    transform: translateY(-10px);
+    background-color: var(--Hover-Color);
+    color: white;
+    cursor: pointer;
+}
+
+
+.Icons__SideBar{
+display: flex;
+flex-direction: column;
+align-items: left;
+margin-top: 250px;
+color: black;
+position:absolute;
+list-style: none;
+padding:20px;
+
+}
+
+.github{
+margin-top: 20px;
+width: 30px;
+}
+
+.linkedin{
+    margin-top: 30px;
+    width: 30px;
+}
+
+.github:hover{
+    transform: translateX(10px);
+    transition: transform 0.3s;
+}
+
+.linkedin:hover{
+    transform: translateX(10px);
+    transition: transform 0.3s;
+}
+
+/*Skills section*/
+
+.Languages__section{
+    text-align: center;
+}
+
+.About__me__Titles{
+    font-weight: 600;
+}
+
+.AM__Container{
+    border-radius: 15px;
+    outline-style: solid;
+    height: 200px;
+    width: 700px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.CI__Container{
+    border-radius: 15px;
+    outline-style: solid;
+    height: 300px;
+    width: 700px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.IS__Container{
+    border-radius: 15px;
+    outline-style: solid;
+    height: 200px;
+    width: 700px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    font-size:20px;
+}
+
+
+.Skills__Container{
+    display:flex;
+    justify-content: space-around;
+    margin:0;
+    min-height:30vh;
+}
+
+.frontend__category{
+    border-radius: 10px;
+    outline-style: solid;
+    width: 300px;
+    height: 200px;
+}
+
+.backend__category{
+    border-radius: 10px;
+    outline-style: solid;
+    width: 300px;
+    height: 200px;
+}
+
+.frontend__Skills{
+    color:black;
+    padding: 5px;
+    margin:5px;
+    list-style: none;
+    font-weight: 500;
+}
+
+.backend__Skills{
+    color:black;
+    padding: 5px;
+    margin:5px;
+    list-style: none;
+    font-weight: 500;
+}
+
+
+/*Live projects section*/
+
+.Projects__Contanier{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Projects__Title{
+    text-align: center;
+}
+
+.Projects__Display{
+    margin: 50px;
+    border-radius: 15px;
+    border: solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+
+.Project__Picture{
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+}
+.Project__details{
+margin-bottom: 80px;
+overflow-wrap: normal;
+text-align: center;
+}
+
+.More__Info{
+    color: black;
+    width: 100px;
+    height: 30px;
+    background-color: var(--Projects-Button-Color);
+    border: none;
+    font-size: 20px;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--Hover-Color);
+
+    transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+
+}
+
+.More__Info:hover{
+    transform: translateY(-10px);
+    background-color: var(--Hover-Color);
+    color: white;
+    cursor: pointer;
+}
+.more__Projects{
+    color: black;
+    width: 300px;
+    height: 50px;
+    margin: 50px;
+    background-color: var(--Projects-Button-Color);
+    border: none;
+    font-size: 20px;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--Hover-Color);
+
+    transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+}
+
+.more__Projects:hover{
+    transform: translateY(-10px);
+    background-color: var(--Hover-Color);
+    color: white;
+    cursor: pointer;
+}
+
+/*Contacts form section*/
+
+.contacts__section{
+text-align: center;
+}
+
+.contacts__Form{
+    margin-left: 660px;
+    width:500px;
+    padding:50px;
+    border-radius: 15px;
+    outline-style: solid;
+    color: black;
+    height:500px;
+}
+
+.full__Name{
+    padding:10px;
+}
+
+.Email__Input{
+    padding:10px;
+}
+
+.message__Input{
+    padding:10px;
+}
+
+.Submit{
+    color: black;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: var(--Projects-Button-Color);
+    border: none;
+    font-size: 20px;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--Hover-Color);
+
+    transition: transform 0.3s, background-colour 0.3s, color 0.3s;
+
+}
+
+.Submit:hover{
+    transform: translateY(-10px);
+    background-color: var(--Hover-Color);
+    color: white;
+    cursor: pointer;
+}
+
+.form__Textarea{
+    resize: none;
+    height: 100px;
+    width: 400px;
+}
+
+.Footer{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Outfit',sans-serif
+}
+
+.linksInFooter{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+list-style: none;
+}
+
+.linksInFooter a:hover{
+    transition: all 0.3s ease 0s; 
+    color:var(--Hover-Color);
+}
+
+.footer__Socials{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.github_F:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+.LinkedIn_F:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+/*Media Sizes for screens*/
+
+@media screen and (max-width:1366px){
+    .Content__Container{
+        margin: 40px;
+        width: 1270px;
+        text-align: center;
+        background-color:white;
+        border-radius:15px;
+        }
+
+}
